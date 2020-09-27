@@ -1,0 +1,36 @@
+
+
+<div class="container" [ngSwitch]="criptografia">
+    <p *ngSwitchCase="'cc'"><app-cc></app-cc></p>
+    <p *ngSwitchCase="'xor'"><app-xor></app-xor></p>
+    <p *ngSwitchCase="'sdes'"><app-sdes></app-sdes></p>
+    <p *ngSwitchCase="'des'"><app-des></app-des></p>
+    <p *ngSwitchCase="'aes'"><app-aes></app-aes></p>
+</div>
+
+
+<div class="navbar">
+    <a (click)="cifraCesar()"
+    [class.active]="criptografia == 'cc'"
+    >Cifra de Cesar</a>
+
+    <a (click)="xor()"
+    [class.active]="criptografia == 'xor'"
+    >Cifra XOR</a>
+
+    <a (click)="sdes()"
+    [class.active]="criptografia == 'sdes'"
+    >S-DES</a>
+
+    <a (click)="des()"
+    [class.active]="criptografia == 'des'"
+    >DES</a>
+    
+    <a (click)="aes()"
+    [class.active]="criptografia == 'aes'"
+    >AES</a>
+</div>
+
+<button (click)="teste()">BOTAO TESTE</button>
+
+
