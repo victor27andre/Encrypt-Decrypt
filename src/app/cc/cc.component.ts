@@ -12,12 +12,6 @@ const methods = new Methods();
 })
 export class CcComponent implements OnInit {
 
-  title = 'Cifra de César';
-
-  texto = '';
-  deslocamento = '';
-  resultado = '';
-
   plainText: string;  
   encryptText: string;  
   encPassword: string;  
@@ -47,7 +41,7 @@ export class CcComponent implements OnInit {
     }
   }
 
-  decifrar() {
+  descifrar() {
     if(this.encryptText.length > 0 && this.decPassword.length > 0) {
       if (useful.isPositiveInteger(this.decPassword)) {
         try {

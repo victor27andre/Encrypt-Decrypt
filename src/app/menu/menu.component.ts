@@ -23,7 +23,6 @@ export class MenuComponent implements OnInit {
     this.criptografia = 'aes'
   }
   des(){
-    console.log('des');
     this.criptografia = 'des'
   }
   sdes(){

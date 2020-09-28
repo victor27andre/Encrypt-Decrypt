@@ -1,6 +1,6 @@
 import { Useful } from '../app.component';
 
-const util = new Useful();
+const useful = new Useful();
 
 export class Methods {
     cifrar(text: string, deslocamento: number, min: number = 12, max: number = 255): string {
@@ -11,7 +11,7 @@ export class Methods {
         if (deslocamento < 0 || deslocamento > MAX_DESLOCAMENTO) {
             throw 'O deslocamento não pode ser menor que 0 e não pode ser maior que ' + MAX_DESLOCAMENTO + '.';
         }
-        let invalidchars = util.invalidCharsInString(text, min, max);
+        let invalidchars = useful.invalidCharsInString(text, min, max);
         if (invalidchars != '') {
             throw 'Existe(m) caractere(s) inválido(s) no(a) texto/palavra.\nCaracteres inválidos: ' + invalidchars;
         }
@@ -34,7 +34,7 @@ export class Methods {
         if (deslocamento < 0 || deslocamento > MAX_DESLOCAMENTO) {
             throw 'O deslocamento não pode ser menor que 0 e não pode ser maior que ' + MAX_DESLOCAMENTO;
         }
-        let invalidchars = util.invalidCharsInString(text, min, max);
+        let invalidchars = useful.invalidCharsInString(text, min, max);
         if (invalidchars != '') {
             throw 'Existe(m) caractere(s) inválido(s) no(a) texto/palavra.\nCaracteres inválidos: ' + invalidchars;
         }
