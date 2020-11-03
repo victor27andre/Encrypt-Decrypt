@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59874447-b5db-4fa9-a460-c70041cf3054/deploy-status)](https://app.netlify.com/sites/zealous-mahavira-a52f85/deploys)
+zealous-mahavira-a52f85.netlify.app
 
 # Encryption
 
